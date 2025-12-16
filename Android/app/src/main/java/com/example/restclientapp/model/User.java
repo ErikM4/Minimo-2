@@ -18,6 +18,14 @@ public class User {
 
     public User() {}
 
+    // De aquí
+    private String team;
+    private String avatar;
+
+    public String getTeam() { return team; }
+    public String getAvatar() { return avatar; }
+    // Hasta aquí
+
     public String getId(){
         return id;
     }

@@ -44,6 +44,23 @@ public class User {
         }
     }
 
+    //De aquí
+    private String team;
+    private String avatar;
+    private int puntos;
+
+    public String getTeam() { return team; }
+    public void setTeam(String team) { this.team = team; }
+    public String getAvatar() { return avatar; }
+    public void setAvatar(String avatar) { this.avatar = avatar; }
+    public void setPuntos(int puntos) {
+        this.puntos = puntos;
+    }
+    public int getPuntos() {
+        return puntos;
+    }
+    //Hasta aquí
+
     public String getId() {
         return id;
     }

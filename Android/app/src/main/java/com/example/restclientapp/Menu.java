@@ -27,6 +27,13 @@ public class Menu extends AppCompatActivity {
                 return insets;
             });
 
+            // De aquí
+            Button btnTeam = findViewById(R.id.btnTeam); // Crea este botón en tu activity_menu.xml
+            btnTeam.setOnClickListener(v -> {
+                startActivity(new Intent(Menu.this, TeamActivity.class));
+            });
+            // Hasta aquí
+
             Button btnLogout = findViewById(R.id.btnLogout);
 
             btnLogout.setOnClickListener(v -> {
@@ -46,13 +53,8 @@ public class Menu extends AppCompatActivity {
             Button btnTienda = findViewById(R.id.btnTienda);
 
             btnTienda.setOnClickListener(v -> {
-                // Creamos el intento para ir a la actividad Tienda
                 Intent intent = new Intent(Menu.this, TiendaActivity.class);
                 startActivity(intent);
-
-                // NOTA: Aquí NO ponemos finish().
-                // Queremos que si el usuario da al botón "Atrás" en la tienda,
-                // vuelva a este Menú, no se salga de la app.
             });
         }
 

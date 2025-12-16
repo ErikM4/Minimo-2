@@ -6,6 +6,9 @@ import com.example.restclientapp.model.User;
 import com.example.restclientapp.model.Verificacion;
 import com.example.restclientapp.model.ObjetoCompra;
 import com.example.restclientapp.model.Producto;
+// De aquí
+import com.example.restclientapp.model.TeamResponse;
+// Hasta aquí
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -37,4 +40,9 @@ public interface AuthService {
 
     @retrofit2.http.PUT("usuarios/monedas/{email}/{cantidad}")
     Call<Void> updateMonedas(@retrofit2.http.Path("email") String email, @retrofit2.http.Path("cantidad") int cantidad);
+
+    // De aquí
+    @GET("usuarios/{nombre}/team")
+    Call<TeamResponse> getTeamInfo(@Path("nombre") String id);
+    // Hasta aquí
 }

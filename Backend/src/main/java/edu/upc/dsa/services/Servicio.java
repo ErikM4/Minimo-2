@@ -10,6 +10,13 @@ import javax.ws.rs.*;
 import javax.ws.rs.core.MediaType;
 import javax.ws.rs.core.Response;
 
+// De aquí
+import edu.upc.dsa.modelos.TeamResponse;
+import java.util.List;
+import edu.upc.dsa.modelos.MemberDTO;
+import java.util.ArrayList;
+// Hasta aquí
+
 @Api(value = "/usuarios", description = "Servicios de usuarios")
 @Path("/usuarios")
 public class Servicio {
@@ -212,4 +219,53 @@ public class Servicio {
                     .entity("Error interno: " + e.getMessage()).build();
         }
     }
+
+    // De aquí
+    @GET
+    @Path("/{id}/team")  // Ahora la ruta espera un ID
+    @Produces(MediaType.APPLICATION_JSON)
+    @ApiOperation(value = "Obtener equipo y miembros", notes = "Devuelve el equipo y la lista de compañeros buscando por ID de usuario")
+    @ApiResponses(value = {
+            @ApiResponse(code = 200, message = "OK", response = TeamResponse.class),
+            @ApiResponse(code = 404, message = "Usuario no encontrado")
+    })
+    public Response getTeamInfo(@PathParam("id") String id) {
+
+        System.out.println("--- PETICIÓN RECIBIDA: Ver equipo del ID " + id + " ---");
+
+        User u = null;
+        List<User> users = m.getUsuarios();
+        for(User user : users) {
+            // CAMBIO CLAVE: Comparamos IDs, no nombres
+            if(user.getId().equals(id)) {
+                u = user;
+                break;
+            }
+        }
+
+        if (u == null) {
+            return Response.status(404).entity("Usuario no encontrado").build();
+        }
+
+        // Parche de seguridad (igual que antes)
+        if (u.getTeam() == null) {
+            u.setTeam("Porxinos");
+        }
+
+        List<User> compañeros = ((UserManagerImpl)m).getUsuariosPorEquipo(u.getTeam());
+
+        List<MemberDTO> listaParaEnviar = new ArrayList<>();
+        for (User compañero : compañeros) {
+            String avatar = compañero.getAvatar() != null ? compañero.getAvatar() : "https://via.placeholder.com/150";
+            listaParaEnviar.add(new MemberDTO(
+                    compañero.getNombre(),
+                    avatar,
+                    compañero.getPuntos()
+            ));
+        }
+
+        TeamResponse response = new TeamResponse(u.getTeam(), listaParaEnviar);
+        return Response.status(200).entity(response).build();
+    }
+    // Hasta aquí
 }

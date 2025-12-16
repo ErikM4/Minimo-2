@@ -9,6 +9,24 @@ public class UserManagerImpl implements UserManager {
 
     private UserManagerImpl() {
         usuarios = new ArrayList<>();
+
+        // 1. JUAN (250 Puntos - Porxinos)
+        User juan = new User("id_juan", "Juan", "juan@gmail.com", "1234");
+        juan.setTeam("Porxinos");
+        juan.setMonedas(1000);
+        juan.setPuntos(250);
+        juan.setAvatar("https://cdn.pixabay.com/photo/2017/07/11/15/51/kermit-2493979_1280.png");
+        juan.setEmailVerificado(true);
+        this.usuarios.add(juan);
+
+        // 2. PALOMO (200 Puntos - Porxinos)
+        User palomo = new User("id_palomo", "Palomo", "palomo@gmail.com", "1234");
+        palomo.setTeam("Porxinos");
+        palomo.setMonedas(1000);
+        palomo.setPuntos(200);
+        palomo.setAvatar("https://cdn.pixabay.com/photo/2016/01/10/18/59/cookie-monster-1132275_1280.jpg");
+        palomo.setEmailVerificado(true);
+        this.usuarios.add(palomo);
     }
 
     public static UserManagerImpl getInstance() {
@@ -25,6 +43,13 @@ public class UserManagerImpl implements UserManager {
 
         User nuevo = new User(UUID.randomUUID().toString(), nombre, email, password);
         nuevo.setEmailVerificado(false);
+
+        // Se pone directamente en el equipo de Porxinos
+        nuevo.setTeam("Porxinos");
+        nuevo.setAvatar("https://cdn.pixabay.com/photo/2017/07/11/15/51/kermit-2493979_1280.png");
+        nuevo.setMonedas(1000);
+        nuevo.setPuntos(0);
+
         usuarios.add(nuevo);
         return nuevo;
     }
@@ -96,4 +121,16 @@ public class UserManagerImpl implements UserManager {
         System.out.println("Código incorrecto para: " + email);
         return false;
     }
+
+    // De aquí
+    public List<User> getUsuariosPorEquipo(String equipo) {
+        List<User> lista = new ArrayList<>();
+        for (User u : this.usuarios) {
+            if (u.getTeam() != null && u.getTeam().equals(equipo)) {
+                lista.add(u);
+            }
+        }
+        return lista;
+    }
+    // Hasta aquí
 }

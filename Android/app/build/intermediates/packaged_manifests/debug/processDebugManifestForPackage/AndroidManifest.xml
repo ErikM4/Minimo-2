@@ -40,8 +40,13 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.restclientapp.Menu" />
+        <activity android:name="com.example.restclientapp.TeamActivity" />
         <activity android:name="com.example.restclientapp.TiendaActivity" />
 
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.example.restclientapp.com.squareup.picasso"
+            android:exported="false" />
         <provider
             android:name="androidx.startup.InitializationProvider"
             android:authorities="com.example.restclientapp.androidx-startup"

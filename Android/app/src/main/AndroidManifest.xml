@@ -29,6 +29,8 @@
 
         <activity android:name=".Menu" />
 
+        <activity android:name=".TeamActivity" />
+
         <activity android:name=".TiendaActivity" />
 
     </application>

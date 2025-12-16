@@ -3800,6 +3800,7 @@ id btnGoToVerify
 id btnLogout
 id btnTabInventario
 id btnTabMercado
+id btnTeam
 id btnTienda
 id buttonPanel
 id button_login
@@ -3940,6 +3941,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imgAvatar
 id imgLogo
 id imgProducto
 id immediateStop
@@ -4092,6 +4094,7 @@ id progress_horizontal
 id radio
 id ratio
 id rectangles
+id recyclerMembers
 id recyclerViewProductos
 id report_drawn
 id retreat
@@ -4217,9 +4220,12 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvCantidad
+id tvMemberName
+id tvMemberPoints
 id tvMonedasUsuario
 id tvNombreProducto
 id tvPrecioProducto
+id tvTeamName
 id tvTitle
 id txtBienvenida
 id txtHeader
@@ -4369,6 +4375,7 @@ layout abc_tooltip
 layout activity_main
 layout activity_menu
 layout activity_splash
+layout activity_team
 layout activity_tienda
 layout custom_dialog
 layout design_bottom_navigation_item
@@ -4388,6 +4395,7 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout ime_base_split_test_activity
 layout ime_secondary_split_test_activity
+layout item_member
 layout item_producto
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

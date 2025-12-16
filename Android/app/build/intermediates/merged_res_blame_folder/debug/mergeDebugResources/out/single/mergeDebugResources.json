@@ -1,122 +1,134 @@
 [
     {
-        "merged": "com.example.restclientapp-debug-36:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.restclientapp-main-38:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "com.example.restclientapp-debug-36:/layout_item_member.xml.flat",
+        "source": "com.example.restclientapp-main-38:/layout/item_member.xml"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "com.example.restclientapp-main-38:/mipmap-mdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\mipmap-xxxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/drawable_bg_glass_panel.xml.flat",
-        "source": "com.example.restclientapp-main-38:/drawable/bg_glass_panel.xml"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\layout_activity_tienda.xml.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\layout\\activity_tienda.xml"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.restclientapp-main-38:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\xml_data_extraction_rules.xml.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\xml\\data_extraction_rules.xml"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/layout_activity_main.xml.flat",
-        "source": "com.example.restclientapp-main-38:/layout/activity_main.xml"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\mipmap-mdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/xml_data_extraction_rules.xml.flat",
-        "source": "com.example.restclientapp-main-38:/xml/data_extraction_rules.xml"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/drawable_energia.png.flat",
-        "source": "com.example.restclientapp-main-38:/drawable/energia.png"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\layout_item_producto.xml.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\layout\\item_producto.xml"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "com.example.restclientapp-main-38:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\layout_activity_main.xml.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/layout_activity_splash.xml.flat",
-        "source": "com.example.restclientapp-main-38:/layout/activity_splash.xml"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\mipmap-xxxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/xml_backup_rules.xml.flat",
-        "source": "com.example.restclientapp-main-38:/xml/backup_rules.xml"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\drawable_bg_space_gradient.xml.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\drawable\\bg_space_gradient.xml"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "com.example.restclientapp-main-38:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "com.example.restclientapp-debug-36:/layout_activity_team.xml.flat",
+        "source": "com.example.restclientapp-main-38:/layout/activity_team.xml"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.restclientapp-main-38:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\drawable_ic_launcher_background.xml.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\drawable\\ic_launcher_background.xml"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/layout_item_producto.xml.flat",
-        "source": "com.example.restclientapp-main-38:/layout/item_producto.xml"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\drawable_jeringuilla.png.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\drawable\\jeringuilla.png"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/drawable_btn_neon_cyan.xml.flat",
-        "source": "com.example.restclientapp-main-38:/drawable/btn_neon_cyan.xml"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\mipmap-xxhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "com.example.restclientapp-main-38:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\drawable_bg_glass_panel.xml.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\drawable\\bg_glass_panel.xml"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/drawable_chaleco.png.flat",
-        "source": "com.example.restclientapp-main-38:/drawable/chaleco.png"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\mipmap-hdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/drawable_ic_launcher_background.xml.flat",
-        "source": "com.example.restclientapp-main-38:/drawable/ic_launcher_background.xml"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\drawable_logo_splash.png.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\drawable\\logo_splash.png"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/layout_activity_tienda.xml.flat",
-        "source": "com.example.restclientapp-main-38:/layout/activity_tienda.xml"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\drawable_chaleco.png.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\drawable\\chaleco.png"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.restclientapp-main-38:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\mipmap-xhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.restclientapp-main-38:/mipmap-mdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\mipmap-xhdpi\\ic_launcher_round.webp"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/drawable_bg_space_gradient.xml.flat",
-        "source": "com.example.restclientapp-main-38:/drawable/bg_space_gradient.xml"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\drawable_btn_neon_cyan.xml.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\drawable\\btn_neon_cyan.xml"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/drawable_ic_launcher_foreground.png.flat",
-        "source": "com.example.restclientapp-main-38:/drawable/ic_launcher_foreground.png"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\drawable_energia.png.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\drawable\\energia.png"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "com.example.restclientapp-main-38:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\drawable_katana.png.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\drawable\\katana.png"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/drawable_katana.png.flat",
-        "source": "com.example.restclientapp-main-38:/drawable/katana.png"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\layout_activity_menu.xml.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\layout\\activity_menu.xml"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/drawable_logo_splash.png.flat",
-        "source": "com.example.restclientapp-main-38:/drawable/logo_splash.png"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\xml_backup_rules.xml.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\xml\\backup_rules.xml"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "com.example.restclientapp-main-38:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\drawable_input_void.xml.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\drawable\\input_void.xml"
+    },
+    {
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\drawable_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\drawable\\ic_launcher_foreground.png"
     },
     {
         "merged": "com.example.restclientapp-debug-36:/layout_activity_menu.xml.flat",
         "source": "com.example.restclientapp-main-38:/layout/activity_menu.xml"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/drawable_input_void.xml.flat",
-        "source": "com.example.restclientapp-main-38:/drawable/input_void.xml"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\mipmap-mdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/drawable_jeringuilla.png.flat",
-        "source": "com.example.restclientapp-main-38:/drawable/jeringuilla.png"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\mipmap-xxhdpi\\ic_launcher.webp"
     },
     {
-        "merged": "com.example.restclientapp-debug-36:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "com.example.restclientapp-main-38:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\layout_activity_splash.xml.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\layout\\activity_splash.xml"
+    },
+    {
+        "merged": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-debug-36:\\mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "C:\\Users\\Erik\\.gradle\\daemon\\8.13\\com.example.restclientapp-main-38:\\mipmap-hdpi\\ic_launcher_round.webp"
     }
 ]

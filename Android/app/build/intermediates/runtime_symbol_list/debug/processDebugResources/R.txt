@@ -3799,6 +3799,7 @@ int id btnGoToVerify 0x7f08006f
 int id btnLogout 0x7f080070
 int id btnTabInventario 0x7f080071
 int id btnTabMercado 0x7f080072
+int id btnTeam 0x7f080233
 int id btnTienda 0x7f080073
 int id buttonPanel 0x7f080074
 int id button_login 0x7f080075
@@ -3939,6 +3940,7 @@ int id ifRoom 0x7f0800fb
 int id ignore 0x7f0800fc
 int id ignoreRequest 0x7f0800fd
 int id image 0x7f0800fe
+int id imgAvatar 0x7f080234
 int id imgLogo 0x7f0800ff
 int id imgProducto 0x7f080100
 int id immediateStop 0x7f080101
@@ -4091,6 +4093,7 @@ int id progress_horizontal 0x7f080193
 int id radio 0x7f080194
 int id ratio 0x7f080195
 int id rectangles 0x7f080196
+int id recyclerMembers 0x7f080235
 int id recyclerViewProductos 0x7f080197
 int id report_drawn 0x7f080198
 int id retreat 0x7f080199
@@ -4216,9 +4219,12 @@ int id transition_scene_layoutid_cache 0x7f080210
 int id transition_transform 0x7f080211
 int id triangle 0x7f080212
 int id tvCantidad 0x7f080213
+int id tvMemberName 0x7f080236
+int id tvMemberPoints 0x7f080237
 int id tvMonedasUsuario 0x7f080214
 int id tvNombreProducto 0x7f080215
 int id tvPrecioProducto 0x7f080216
+int id tvTeamName 0x7f080238
 int id tvTitle 0x7f080217
 int id txtBienvenida 0x7f080218
 int id txtHeader 0x7f080219
@@ -4368,6 +4374,7 @@ int layout abc_tooltip 0x7f0b001b
 int layout activity_main 0x7f0b001c
 int layout activity_menu 0x7f0b001d
 int layout activity_splash 0x7f0b001e
+int layout activity_team 0x7f0b0073
 int layout activity_tienda 0x7f0b001f
 int layout custom_dialog 0x7f0b0020
 int layout design_bottom_navigation_item 0x7f0b0021
@@ -4387,6 +4394,7 @@ int layout design_text_input_end_icon 0x7f0b002e
 int layout design_text_input_start_icon 0x7f0b002f
 int layout ime_base_split_test_activity 0x7f0b0030
 int layout ime_secondary_split_test_activity 0x7f0b0031
+int layout item_member 0x7f0b0074
 int layout item_producto 0x7f0b0032
 int layout m3_alert_dialog 0x7f0b0033
 int layout m3_alert_dialog_actions 0x7f0b0034

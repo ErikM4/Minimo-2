@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:2:1-36:12
-INJECTED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:2:1-36:12
+ADDED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:2:1-38:12
+INJECTED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:2:1-38:12
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\Erik\.gradle\caches\8.13\transforms\bb172b1a238c1f115061835ce29c56f2\transformed\material-1.13.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\Erik\.gradle\caches\8.13\transforms\fb62d6c5dae3af0c2646fbd392329eaa\transformed\constraintlayout-2.2.1\AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.7.1] C:\Users\Erik\.gradle\caches\8.13\transforms\20ccb58cf61b4c68a21cb29c167c82f2\transformed\appcompat-resources-1.7.1\AndroidManifest.xml:2:1-7:12
@@ -14,6 +14,7 @@ MERGED from [androidx.fragment:fragment:1.5.4] C:\Users\Erik\.gradle\caches\8.13
 MERGED from [androidx.activity:activity:1.11.0] C:\Users\Erik\.gradle\caches\8.13\transforms\ffc8e4aeacb483070d5636da8344c618\transformed\activity-1.11.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-splashscreen:1.0.1] C:\Users\Erik\.gradle\caches\8.13\transforms\fcb0d36d34755c9c892215c9ac7ad011\transformed\core-splashscreen-1.0.1\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Erik\.gradle\caches\8.13\transforms\cee594757ed82e365f9aad109d453a34\transformed\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Erik\.gradle\caches\8.13\transforms\cef9bc18374230f35a35ff177592d94d\transformed\picasso-2.71828\AndroidManifest.xml:2:1-14:12
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Erik\.gradle\caches\8.13\transforms\d9c00591c51f36933b2d60ae2a826812\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:17:1-23:12
 MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] C:\Users\Erik\.gradle\caches\8.13\transforms\e10525100f28d01853bd21f1b948ef7c\transformed\graphics-shapes-release\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.savedstate:savedstate:1.2.1] C:\Users\Erik\.gradle\caches\8.13\transforms\00346b4aaf0c0281f114dd591726271c\transformed\savedstate-1.2.1\AndroidManifest.xml:17:1-22:12
@@ -45,6 +46,7 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] C:\Users\Er
 MERGED from [androidx.arch.core:core-runtime:2.2.0] C:\Users\Erik\.gradle\caches\8.13\transforms\9440f076d52a5d73454bada52cef18b2\transformed\core-runtime-2.2.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\Erik\.gradle\caches\8.13\transforms\db96aa9535a9619267fb7ef9b081dae7\transformed\core-viewtree-1.0.0\AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\Erik\.gradle\caches\8.13\transforms\13ac8b219906b9eb0c75ee66ee84cee6\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:2:1-7:12
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\Erik\.gradle\caches\8.13\transforms\94cc3b1df5b1783135f33702b4bfbb92\transformed\exifinterface-27.1.0\AndroidManifest.xml:17:1-22:12
 	package
 		INJECTED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml
 	android:versionName
@@ -60,12 +62,14 @@ ADDED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManife
 	android:name
 		ADDED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:7:5-34:19
-INJECTED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:7:5-34:19
+ADDED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:7:5-36:19
+INJECTED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:7:5-36:19
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\Erik\.gradle\caches\8.13\transforms\bb172b1a238c1f115061835ce29c56f2\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.13.0] C:\Users\Erik\.gradle\caches\8.13\transforms\bb172b1a238c1f115061835ce29c56f2\transformed\material-1.13.0\AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\Erik\.gradle\caches\8.13\transforms\fb62d6c5dae3af0c2646fbd392329eaa\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.2.1] C:\Users\Erik\.gradle\caches\8.13\transforms\fb62d6c5dae3af0c2646fbd392329eaa\transformed\constraintlayout-2.2.1\AndroidManifest.xml:7:5-20
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Erik\.gradle\caches\8.13\transforms\cef9bc18374230f35a35ff177592d94d\transformed\picasso-2.71828\AndroidManifest.xml:7:5-12:19
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Erik\.gradle\caches\8.13\transforms\cef9bc18374230f35a35ff177592d94d\transformed\picasso-2.71828\AndroidManifest.xml:7:5-12:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Erik\.gradle\caches\8.13\transforms\757f98973758b412b6c423559a5b9513\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Erik\.gradle\caches\8.13\transforms\757f98973758b412b6c423559a5b9513\transformed\emoji2-1.3.0\AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Erik\.gradle\caches\8.13\transforms\a14c43644afe93007cfe0e64d0f9b1e7\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:23:5-33:19
@@ -122,10 +126,14 @@ activity#com.example.restclientapp.Menu
 ADDED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:30:9-42
 	android:name
 		ADDED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:30:19-39
-activity#com.example.restclientapp.TiendaActivity
-ADDED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:32:9-52
+activity#com.example.restclientapp.TeamActivity
+ADDED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:32:9-50
 	android:name
-		ADDED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:32:19-49
+		ADDED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:32:19-47
+activity#com.example.restclientapp.TiendaActivity
+ADDED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:34:9-52
+	android:name
+		ADDED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml:34:19-49
 uses-sdk
 INJECTED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml
@@ -150,6 +158,8 @@ MERGED from [androidx.core:core-splashscreen:1.0.1] C:\Users\Erik\.gradle\caches
 MERGED from [androidx.core:core-splashscreen:1.0.1] C:\Users\Erik\.gradle\caches\8.13\transforms\fcb0d36d34755c9c892215c9ac7ad011\transformed\core-splashscreen-1.0.1\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Erik\.gradle\caches\8.13\transforms\cee594757ed82e365f9aad109d453a34\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\Erik\.gradle\caches\8.13\transforms\cee594757ed82e365f9aad109d453a34\transformed\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Erik\.gradle\caches\8.13\transforms\cef9bc18374230f35a35ff177592d94d\transformed\picasso-2.71828\AndroidManifest.xml:5:5-44
+MERGED from [com.squareup.picasso:picasso:2.71828] C:\Users\Erik\.gradle\caches\8.13\transforms\cef9bc18374230f35a35ff177592d94d\transformed\picasso-2.71828\AndroidManifest.xml:5:5-44
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Erik\.gradle\caches\8.13\transforms\d9c00591c51f36933b2d60ae2a826812\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
 MERGED from [androidx.customview:customview-poolingcontainer:1.0.0] C:\Users\Erik\.gradle\caches\8.13\transforms\d9c00591c51f36933b2d60ae2a826812\transformed\customview-poolingcontainer-1.0.0\AndroidManifest.xml:20:5-21:38
 MERGED from [androidx.graphics:graphics-shapes-android:1.0.1] C:\Users\Erik\.gradle\caches\8.13\transforms\e10525100f28d01853bd21f1b948ef7c\transformed\graphics-shapes-release\AndroidManifest.xml:5:5-44
@@ -212,10 +222,20 @@ MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\Erik\.gradle\caches\8.1
 MERGED from [androidx.core:core-viewtree:1.0.0] C:\Users\Erik\.gradle\caches\8.13\transforms\db96aa9535a9619267fb7ef9b081dae7\transformed\core-viewtree-1.0.0\AndroidManifest.xml:5:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\Erik\.gradle\caches\8.13\transforms\13ac8b219906b9eb0c75ee66ee84cee6\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:5:5-44
 MERGED from [androidx.annotation:annotation-experimental:1.4.1] C:\Users\Erik\.gradle\caches\8.13\transforms\13ac8b219906b9eb0c75ee66ee84cee6\transformed\annotation-experimental-1.4.1\AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\Erik\.gradle\caches\8.13\transforms\94cc3b1df5b1783135f33702b4bfbb92\transformed\exifinterface-27.1.0\AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:exifinterface:27.1.0] C:\Users\Erik\.gradle\caches\8.13\transforms\94cc3b1df5b1783135f33702b4bfbb92\transformed\exifinterface-27.1.0\AndroidManifest.xml:20:5-44
 	android:targetSdkVersion
 		INJECTED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
 		INJECTED from C:\Users\Erik\Desktop\DSA\Minimo 2\Android\app\src\main\AndroidManifest.xml
+provider#com.squareup.picasso.PicassoProvider
+ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Erik\.gradle\caches\8.13\transforms\cef9bc18374230f35a35ff177592d94d\transformed\picasso-2.71828\AndroidManifest.xml:8:9-11:40
+	android:authorities
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Erik\.gradle\caches\8.13\transforms\cef9bc18374230f35a35ff177592d94d\transformed\picasso-2.71828\AndroidManifest.xml:10:13-72
+	android:exported
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Erik\.gradle\caches\8.13\transforms\cef9bc18374230f35a35ff177592d94d\transformed\picasso-2.71828\AndroidManifest.xml:11:13-37
+	android:name
+		ADDED from [com.squareup.picasso:picasso:2.71828] C:\Users\Erik\.gradle\caches\8.13\transforms\cef9bc18374230f35a35ff177592d94d\transformed\picasso-2.71828\AndroidManifest.xml:9:13-64
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.3.0] C:\Users\Erik\.gradle\caches\8.13\transforms\757f98973758b412b6c423559a5b9513\transformed\emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\Erik\.gradle\caches\8.13\transforms\a14c43644afe93007cfe0e64d0f9b1e7\transformed\lifecycle-process-2.6.2\AndroidManifest.xml:24:9-32:20
