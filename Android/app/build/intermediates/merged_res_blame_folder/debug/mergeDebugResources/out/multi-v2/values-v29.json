@@ -4,7 +4,7 @@
             "outputFile": "com.example.restclientapp-mergeDebugResources-34:/values-v29/values-v29.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\ruben\\.gradle\\caches\\8.13\\transforms\\fcb0d36d34755c9c892215c9ac7ad011\\transformed\\core-splashscreen-1.0.1\\res\\values-v29\\values-v29.xml",
+                    "source": "C:\\Users\\Erik\\.gradle\\caches\\8.13\\transforms\\fcb0d36d34755c9c892215c9ac7ad011\\transformed\\core-splashscreen-1.0.1\\res\\values-v29\\values-v29.xml",
                     "from": {
                         "startLines": "2,7",
                         "startColumns": "4,4",

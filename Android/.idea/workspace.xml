@@ -5,115 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5e08f29f-eaaa-4ca0-937d-84681b1738a4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/AndroidProjectSystem.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/caches/deviceStreaming.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deploymentTargetSelector.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/deviceManager.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/migrations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/runConfigurations.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/studiobot.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/proguard-rules.pro" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/restclientapp/ExampleInstrumentedTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/restclientapp/MainActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/restclientapp/Menu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/restclientapp/ProductosAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/restclientapp/SessionManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/restclientapp/TiendaActivity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/restclientapp/api/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/restclientapp/api/RetrofitClient.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/restclientapp/model/LoginResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/restclientapp/model/ObjetoCompra.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/restclientapp/model/Producto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/restclientapp/model/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/restclientapp/model/UserLoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/restclientapp/model/UserRegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/restclientapp/model/Verificacion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_glass_panel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/bg_space_gradient.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/btn_neon_cyan.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/chaleco.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/energia.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_background.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/input_void.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/jeringuilla.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/katana.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/logo_splash.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_menu.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_splash.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_tienda.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/item_producto.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.webp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/colors.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/backup_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/xml/data_extraction_rules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/test/java/com/example/restclientapp/ExampleUnitTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/build/reports/problems/problems-report.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/libs.versions.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../I18N/src/main/resources/ca.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../I18N/src/main/resources/ca.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../I18N/src/main/resources/es.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../I18N/src/main/resources/es.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../I18N/src/main/resources/pt.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../I18N/src/main/resources/pt.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/.idea/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/public/swagger/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/public/swagger/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/public/swagger/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/public/swagger/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/public/swagger/oauth2-redirect.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/public/swagger/oauth2-redirect.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/public/swagger/swagger-initializer.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/public/swagger/swagger-initializer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/public/swagger/swagger-ui-bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/public/swagger/swagger-ui-bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/public/swagger/swagger-ui-es-bundle-core.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/public/swagger/swagger-ui-es-bundle-core.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/public/swagger/swagger-ui-es-bundle.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/public/swagger/swagger-ui-es-bundle.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/public/swagger/swagger-ui-standalone-preset.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/public/swagger/swagger-ui-standalone-preset.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/public/swagger/swagger-ui.css" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/public/swagger/swagger-ui.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/public/swagger/swagger-ui.js" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/public/swagger/swagger-ui.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/ProductoManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/ProductoManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/ProductoManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/ProductoManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/UserManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/UserManager.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/UserManagerImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/UserManagerImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/filters/CORSFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/filters/CORSFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/modelos/ObjetoCompra.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/modelos/ObjetoCompra.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/modelos/Producto.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/modelos/Producto.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/modelos/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/modelos/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/modelos/Verificacion.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/modelos/Verificacion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/services/ProductoServicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/services/ProductoServicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/services/Servicio.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/main/java/edu/upc/dsa/services/Servicio.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/test/java/edu/upc/dsa/ProductoManagerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/test/java/edu/upc/dsa/ProductoManagerImplTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Backend/src/test/java/edu/upc/dsa/UserManagerImplTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Backend/src/test/java/edu/upc/dsa/UserManagerImplTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../../README.md" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -131,7 +28,7 @@
     </projectState>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 5
@@ -141,22 +38,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Android App.app.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.cidr.known.project.marker": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.readMode.enableVisualFormatting": "true",
-    "cf.first.check.clang-format": "false",
-    "cidr.known.project.marker": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "settings.editor.selected.configurable": "AndroidSdkUpdater"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Android App.app.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.readMode.enableVisualFormatting&quot;: &quot;true&quot;,
+    &quot;cf.first.check.clang-format&quot;: &quot;false&quot;,
+    &quot;cidr.known.project.marker&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;AndroidSdkUpdater&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
       <module name="RESTClientApp.app" />
