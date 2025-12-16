@@ -1,0 +1,408 @@
+Index: app/src/main/AndroidManifest.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<manifest xmlns:android=\"http://schemas.android.com/apk/res/android\"\r\n    xmlns:tools=\"http://schemas.android.com/tools\">\r\n<uses-permission android:name=\"android.permission.INTERNET\" />\r\n\r\n    <application\r\n        android:usesCleartextTraffic=\"true\"\r\n        android:allowBackup=\"true\"\r\n        android:dataExtractionRules=\"@xml/data_extraction_rules\"\r\n        android:fullBackupContent=\"@xml/backup_rules\"\r\n        android:icon=\"@mipmap/ic_launcher\"\r\n        android:label=\"@string/app_name\"\r\n        android:roundIcon=\"@mipmap/ic_launcher_round\"\r\n        android:supportsRtl=\"true\"\r\n        android:theme=\"@style/Theme.RESTClientApp\">\r\n        <activity\r\n            android:name=\".MainActivity\"\r\n            android:exported=\"true\"\r\n            android:theme=\"@style/Theme.RESTClientApp.Splash\">\r\n\r\n            <intent-filter>\r\n                <action android:name=\"android.intent.action.MAIN\" />\r\n                <category android:name=\"android.intent.category.LAUNCHER\" />\r\n            </intent-filter>\r\n        </activity>\r\n    </application>\r\n\r\n</manifest>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/AndroidManifest.xml b/app/src/main/AndroidManifest.xml
+--- a/app/src/main/AndroidManifest.xml	(revision 247d5ab51f12adb64e02c736a4da3d5e0f2802ed)
++++ b/app/src/main/AndroidManifest.xml	(date 1764074656968)
+@@ -1,10 +1,10 @@
+ <?xml version="1.0" encoding="utf-8"?>
+ <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:tools="http://schemas.android.com/tools">
+-<uses-permission android:name="android.permission.INTERNET" />
++
++    <uses-permission android:name="android.permission.INTERNET" />
+ 
+     <application
+-        android:usesCleartextTraffic="true"
+         android:allowBackup="true"
+         android:dataExtractionRules="@xml/data_extraction_rules"
+         android:fullBackupContent="@xml/backup_rules"
+@@ -12,14 +12,21 @@
+         android:label="@string/app_name"
+         android:roundIcon="@mipmap/ic_launcher_round"
+         android:supportsRtl="true"
+-        android:theme="@style/Theme.RESTClientApp">
++        android:theme="@style/Theme.RESTClientApp"
++        android:usesCleartextTraffic="true">
++        <activity
++            android:name=".Tienda"
++            android:exported="false" />
++        <activity
++            android:name=".Menu"
++            android:exported="false" />
+         <activity
+             android:name=".MainActivity"
+             android:exported="true"
+             android:theme="@style/Theme.RESTClientApp.Splash">
+-
+             <intent-filter>
+                 <action android:name="android.intent.action.MAIN" />
++
+                 <category android:name="android.intent.category.LAUNCHER" />
+             </intent-filter>
+         </activity>
+Index: app/src/main/java/com/example/restclientapp/MainActivity.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.restclientapp;\r\n\r\nimport androidx.appcompat.app.AppCompatActivity;\r\nimport android.os.Bundle;\r\nimport android.util.Log;\r\nimport android.view.View;\r\nimport android.widget.Button;\r\nimport android.widget.EditText;\r\nimport android.widget.Toast;\r\nimport androidx.core.splashscreen.SplashScreen;\r\n\r\nimport com.example.restclientapp.api.AuthService;\r\nimport com.example.restclientapp.api.RetrofitClient;\r\nimport com.example.restclientapp.model.User;\r\nimport com.example.restclientapp.model.Verificacion;\r\n\r\nimport retrofit2.Call;\r\nimport retrofit2.Callback;\r\nimport retrofit2.Response;\r\n\r\npublic class MainActivity extends AppCompatActivity {\r\n\r\n    private EditText emailEditText;\r\n    private EditText passwordEditText;\r\n    private Button loginButton;\r\n    private Button registerButton;\r\n    private EditText codigoEditText;\r\n    private Button verificarButton;\r\n    private String ultimoemailregistrado = null;\r\n\r\n\r\n    @Override\r\n    protected void onCreate(Bundle savedInstanceState) {\r\n        SplashScreen splashScreen = SplashScreen.installSplashScreen(this);\r\n        super.onCreate(savedInstanceState);\r\n        setContentView(R.layout.activity_main);\r\n\r\n        emailEditText = findViewById(R.id.edit_text_email);\r\n        passwordEditText = findViewById(R.id.edit_text_password);\r\n        loginButton = findViewById(R.id.button_login);\r\n        registerButton = findViewById(R.id.button_register);\r\n        codigoEditText = findViewById(R.id.editTextNumber);\r\n        verificarButton = findViewById(R.id.button);\r\n\r\n\r\n        loginButton.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View v) {\r\n                performLogin();\r\n            }\r\n        });\r\n        registerButton.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View v) {\r\n                performRegister();\r\n            }\r\n        });\r\n        verificarButton.setOnClickListener(new View.OnClickListener() {\r\n            @Override\r\n            public void onClick(View v) {\r\n                performVerify();\r\n            }\r\n        });\r\n    }\r\n\r\n    private void performLogin() {\r\n        String email = emailEditText.getText().toString().trim();\r\n        String password = passwordEditText.getText().toString().trim();\r\n\r\n        if (email.isEmpty() || password.isEmpty()) {\r\n            Toast.makeText(this, \"Introduce el email y la contraseña.\", Toast.LENGTH_SHORT).show();\r\n            return;\r\n        }\r\n        User loginRequest = new User(email, password);\r\n\r\n        AuthService service = RetrofitClient.getApiService();\r\n        Call<User> call = service.login(loginRequest);\r\n\r\n        call.enqueue(new Callback<User>() {\r\n            @Override\r\n            public void onResponse(Call<User> call, Response<User> response) {\r\n                if (response.isSuccessful() && response.body() != null) {\r\n                    // 200 (Login exitoso).\r\n                    User loggedInUser = response.body();\r\n\r\n                    Toast.makeText(MainActivity.this,\r\n                            \"Login exitoso. Bienvenid@ de nuevo\",\r\n                            Toast.LENGTH_LONG).show();\r\n\r\n                } else if (response.code() == 401) {\r\n                    // ERROR 401: Credenciales inválidas (email o contraseña incorrectos)\r\n                    Toast.makeText(MainActivity.this, \"Credenciales inválidas. Inténtalo de nuevo.\", Toast.LENGTH_LONG).show();\r\n                } else {\r\n                    // ERROR HTTP (400, 404, 500)\r\n                    Log.e(\"LOGIN\", \"Error HTTP: \" + response.code());\r\n                    Toast.makeText(MainActivity.this, \"Error de servidor o petición: \" + response.code(), Toast.LENGTH_LONG).show();\r\n                }\r\n            }\r\n\r\n            @Override\r\n            public void onFailure(Call<User> call, Throwable t) {\r\n                //FALLO DE CONEXIÓN: Error de red o servidor no disponible.\r\n                Log.e(\"LOGIN\", \"Fallo de conexión: \" + t.getMessage());\r\n                Toast.makeText(MainActivity.this,\r\n                        \"Error de red: ¿Está el servidor corriendo en 10.0.2.2:8080/dsaApp/ ?\",\r\n                        Toast.LENGTH_LONG).show();\r\n            }\r\n        });\r\n    }\r\n    private void performRegister() {\r\n        String email = emailEditText.getText().toString().trim();\r\n        String password = passwordEditText.getText().toString().trim();\r\n\r\n        if (email.isEmpty() || password.isEmpty()) {\r\n            Toast.makeText(this, \"Introduce el email y la contraseña.\", Toast.LENGTH_SHORT).show();\r\n            return;\r\n        }\r\n        User registerRequest = new User(email, password);\r\n        AuthService service = RetrofitClient.getApiService();\r\n        Call<Void> call = service.register(registerRequest);\r\n        call.enqueue(new Callback<Void>() {\r\n            @Override\r\n            public void onResponse(Call<Void> call, Response<Void> response) {\r\n                if (response.isSuccessful()) {\r\n                    // 201 (Registro exitoso)\r\n                    Toast.makeText(MainActivity.this,\r\n                            \"Registro exitoso. Revisa tu email para verificar tu cuenta.\",\r\n                            Toast.LENGTH_LONG).show();\r\n\r\n\r\n                    ultimoemailregistrado = email;\r\n                    return;\r\n                }\r\n\r\n                // 409 → email ya registrado\r\n                if (response.code() == 409) {\r\n                    Toast.makeText(MainActivity.this,\r\n                            \"Ese email ya está registrado.\",\r\n                            Toast.LENGTH_LONG).show();\r\n                    return;\r\n                }\r\n\r\n                // 400 → campos inválidos o email mal formateado\r\n                if (response.code() == 400) {\r\n                    Toast.makeText(MainActivity.this,\r\n                            \"Datos inválidos o incompletos.\",\r\n                            Toast.LENGTH_LONG).show();\r\n                    return;\r\n                }\r\n\r\n                // Otros errores\r\n                Log.e(\"REGISTER\", \"Error HTTP: \" + response.code());\r\n                Toast.makeText(MainActivity.this,\r\n                        \"Error en la petición: \" + response.code(),\r\n                        Toast.LENGTH_LONG).show();\r\n            }\r\n\r\n            @Override\r\n            public void onFailure(Call<Void> call, Throwable t) {\r\n                Log.e(\"REGISTER\", \"Fallo de conexión: \" + t.getMessage());\r\n                Toast.makeText(MainActivity.this,\r\n                        \"Error de red: ¿El servidor está corriendo?\",\r\n                        Toast.LENGTH_LONG).show();\r\n            }\r\n        });\r\n    }\r\n        private void performVerify() {\r\n\r\n            // Si no hay email registrado aún\r\n            if (ultimoemailregistrado == null) {\r\n                Toast.makeText(this, \"Primero registra un usuario.\", Toast.LENGTH_SHORT).show();\r\n                return;\r\n            }\r\n\r\n            String codigo = codigoEditText.getText().toString().trim();\r\n            if (codigo.isEmpty()) {\r\n                Toast.makeText(this, \"Introduce el código de verificación.\", Toast.LENGTH_SHORT).show();\r\n                return;\r\n            }\r\n            Verificacion verificacion = new Verificacion(ultimoemailregistrado, codigo);\r\n            AuthService service = RetrofitClient.getApiService();\r\n            Call<Void> call = service.verifyAccount(verificacion);\r\n\r\n            call.enqueue(new Callback<Void>() {\r\n                @Override\r\n                public void onResponse(Call<Void> call, Response<Void> response) {\r\n\r\n                    if (response.isSuccessful()) {\r\n                        Toast.makeText(MainActivity.this,\r\n                                \"Cuenta verificada correctamente. Ya puedes iniciar sesión.\",\r\n                                Toast.LENGTH_LONG).show();\r\n\r\n                        // Ocultar campos de verificación tras éxito\r\n                        codigoEditText.setVisibility(View.GONE);\r\n                        verificarButton.setVisibility(View.GONE);\r\n\r\n                        return;\r\n                    }\r\n\r\n                    // Código incorrecto\r\n                    if (response.code() == 401) {\r\n                        Toast.makeText(MainActivity.this,\r\n                                \"Código incorrecto.\",\r\n                                Toast.LENGTH_LONG).show();\r\n                        return;\r\n                    }\r\n\r\n                    // Otros errores\r\n                    Toast.makeText(MainActivity.this,\r\n                            \"Error: \" + response.code(),\r\n                            Toast.LENGTH_LONG).show();\r\n                }\r\n\r\n                @Override\r\n                public void onFailure(Call<Void> call, Throwable t) {\r\n                    Toast.makeText(MainActivity.this,\r\n                            \"Error de conexión: \" + t.getMessage(),\r\n                            Toast.LENGTH_LONG).show();\r\n                }\r\n            });\r\n        }\r\n\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/restclientapp/MainActivity.java b/app/src/main/java/com/example/restclientapp/MainActivity.java
+--- a/app/src/main/java/com/example/restclientapp/MainActivity.java	(revision 247d5ab51f12adb64e02c736a4da3d5e0f2802ed)
++++ b/app/src/main/java/com/example/restclientapp/MainActivity.java	(date 1764074656968)
+@@ -8,12 +8,14 @@
+ import android.widget.EditText;
+ import android.widget.Toast;
+ import androidx.core.splashscreen.SplashScreen;
++import android.content.Intent;
+ 
+ import com.example.restclientapp.api.AuthService;
+ import com.example.restclientapp.api.RetrofitClient;
+ import com.example.restclientapp.model.User;
+ import com.example.restclientapp.model.Verificacion;
+ 
++
+ import retrofit2.Call;
+ import retrofit2.Callback;
+ import retrofit2.Response;
+@@ -33,6 +35,19 @@
+     protected void onCreate(Bundle savedInstanceState) {
+         SplashScreen splashScreen = SplashScreen.installSplashScreen(this);
+         super.onCreate(savedInstanceState);
++
++        // Verificar si ya hay sesión iniciada
++        SessionManager sessionManager = new SessionManager(getApplicationContext());
++
++        if (sessionManager.estalogueado()) {
++            // ¡Ya está logueado! Vamos directo a la tienda/juego
++            Intent intent = new Intent(MainActivity.this, Menu.class);
++            startActivity(intent);
++            finish(); // Cerramos esta actividad para que no vuelva aquí
++            return; // Importante para que no cargue el layout del login
++        }
++
++        // Si no está logueado, mostramos la pantalla de Login normal
+         setContentView(R.layout.activity_main);
+ 
+         emailEditText = findViewById(R.id.edit_text_email);
+@@ -87,6 +102,22 @@
+                             "Login exitoso. Bienvenid@ de nuevo",
+                             Toast.LENGTH_LONG).show();
+ 
++                    // Guardar el token en SharedPreferences
++                    if (response.isSuccessful()) {
++                        // 1. Instanciar el SessionManager
++                        SessionManager sessionManager = new SessionManager(getApplicationContext());
++
++                        // 2. Guardar los datos del usuario que acabas de loguear
++                        // Supongamos que usaste variables 'emailInput' y 'passwordInput'
++                        sessionManager.guardarSesion(email, password);
++
++                        // 3. Ir a la pantalla principal del juego/tienda
++                        Intent intent = new Intent(MainActivity.this, Menu.class);
++                        startActivity(intent);
++                        // 4. IMPORTANTE: Cerrar el Login para que no se pueda volver atrás
++                        finish();
++                    }
++
+                 } else if (response.code() == 401) {
+                     // ERROR 401: Credenciales inválidas (email o contraseña incorrectos)
+                     Toast.makeText(MainActivity.this, "Credenciales inválidas. Inténtalo de nuevo.", Toast.LENGTH_LONG).show();
+Index: app/src/main/res/layout/activity_tienda.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_tienda.xml b/app/src/main/res/layout/activity_tienda.xml
+new file mode 100644
+--- /dev/null	(date 1764074656983)
++++ b/app/src/main/res/layout/activity_tienda.xml	(date 1764074656983)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/main"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    tools:context=".Tienda">
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: .idea/.name
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>MainActivity.java
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.name b/.idea/.name
+--- a/.idea/.name	(revision 247d5ab51f12adb64e02c736a4da3d5e0f2802ed)
++++ b/.idea/.name	(date 1764074656952)
+@@ -1,1 +1,1 @@
+-MainActivity.java
+\ No newline at end of file
++RESTClientApp
+\ No newline at end of file
+Index: app/src/main/res/layout/activity_menu.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/res/layout/activity_menu.xml b/app/src/main/res/layout/activity_menu.xml
+new file mode 100644
+--- /dev/null	(date 1764074656983)
++++ b/app/src/main/res/layout/activity_menu.xml	(date 1764074656983)
+@@ -0,0 +1,51 @@
++<?xml version="1.0" encoding="utf-8"?>
++<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
++    xmlns:app="http://schemas.android.com/apk/res-auto"
++    xmlns:tools="http://schemas.android.com/tools"
++    android:id="@+id/main"
++    android:layout_width="match_parent"
++    android:layout_height="match_parent"
++    android:gravity="center">
++
++    <TextView
++        android:id="@+id/txtBienvenida"
++        android:layout_width="wrap_content"
++        android:layout_height="wrap_content"
++        android:fontFamily="monospace"
++        android:text="¡Bienvenido a Void Gate!"
++        android:textSize="24sp"
++        android:textStyle="bold"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.453"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.341" />
++
++    <Button
++        android:id="@+id/btnTienda"
++        android:layout_width="225dp"
++        android:layout_height="51dp"
++        android:layout_marginTop="12dp"
++        android:text="Ir a la Tienda"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.508"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.439" />
++
++    <Button
++        android:id="@+id/btnLogout"
++        android:layout_width="225dp"
++        android:layout_height="51dp"
++        android:backgroundTint="#FF0000"
++        android:text="Cerrar Sesión"
++        app:layout_constraintBottom_toBottomOf="parent"
++        app:layout_constraintEnd_toEndOf="parent"
++        app:layout_constraintHorizontal_bias="0.508"
++        app:layout_constraintStart_toStartOf="parent"
++        app:layout_constraintTop_toTopOf="parent"
++        app:layout_constraintVertical_bias="0.537" />
++
++</androidx.constraintlayout.widget.ConstraintLayout>
+\ No newline at end of file
+Index: app/src/main/java/com/example/restclientapp/Tienda.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/restclientapp/Tienda.java b/app/src/main/java/com/example/restclientapp/Tienda.java
+new file mode 100644
+--- /dev/null	(date 1764074656968)
++++ b/app/src/main/java/com/example/restclientapp/Tienda.java	(date 1764074656968)
+@@ -0,0 +1,24 @@
++package com.example.restclientapp;
++
++import android.os.Bundle;
++
++import androidx.activity.EdgeToEdge;
++import androidx.appcompat.app.AppCompatActivity;
++import androidx.core.graphics.Insets;
++import androidx.core.view.ViewCompat;
++import androidx.core.view.WindowInsetsCompat;
++
++public class Tienda extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        EdgeToEdge.enable(this);
++        setContentView(R.layout.activity_tienda);
++        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
++            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
++            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
++            return insets;
++        });
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/com/example/restclientapp/Menu.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/restclientapp/Menu.java b/app/src/main/java/com/example/restclientapp/Menu.java
+new file mode 100644
+--- /dev/null	(date 1764074656968)
++++ b/app/src/main/java/com/example/restclientapp/Menu.java	(date 1764074656968)
+@@ -0,0 +1,83 @@
++package com.example.restclientapp;
++
++import android.content.DialogInterface;
++import android.os.Bundle;
++import android.widget.Button;
++import android.content.Intent;
++
++import androidx.activity.EdgeToEdge;
++import androidx.activity.OnBackPressedCallback;
++import androidx.appcompat.app.AlertDialog;
++import androidx.appcompat.app.AppCompatActivity;
++import androidx.core.graphics.Insets;
++import androidx.core.view.ViewCompat;
++import androidx.core.view.WindowInsetsCompat;
++
++public class Menu extends AppCompatActivity {
++
++    @Override
++    protected void onCreate(Bundle savedInstanceState) {
++        super.onCreate(savedInstanceState);
++        EdgeToEdge.enable(this);
++        setContentView(R.layout.activity_menu);
++        if (findViewById(R.id.main) != null) {
++            ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
++                Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
++                v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
++                return insets;
++            });
++
++            Button btnLogout = findViewById(R.id.btnLogout);
++
++            btnLogout.setOnClickListener(v -> {
++                // A. Borramos los datos de la sesión
++                SessionManager sessionManager = new SessionManager(getApplicationContext());
++                sessionManager.cerrarSesion();
++
++                // B. Volvemos a la pantalla de Login
++                // (Asegúrate de que tu login se llama LoginActivity.class)
++                Intent intent = new Intent(Menu.this, MainActivity.class);
++                startActivity(intent);
++
++                // C. Cerramos el Menú para que no pueda volver atrás
++                finish();
++            });
++
++            Button btnTienda = findViewById(R.id.btnTienda);
++
++            btnTienda.setOnClickListener(v -> {
++                // Creamos el intento para ir a la actividad Tienda
++                Intent intent = new Intent(Menu.this, Tienda.class);
++                startActivity(intent);
++
++                // NOTA: Aquí NO ponemos finish().
++                // Queremos que si el usuario da al botón "Atrás" en la tienda,
++                // vuelva a este Menú, no se salga de la app.
++            });
++        }
++
++        OnBackPressedCallback callback = new OnBackPressedCallback(true) {
++            @Override
++            public void handleOnBackPressed() {
++                // Aquí llamamos al diálogo para preguntar si quiere salir
++                mostrarDialogoSalida();
++            }
++        };
++        // Registramos el callback
++        getOnBackPressedDispatcher().addCallback(this, callback);
++    }
++    private void mostrarDialogoSalida() {
++        new AlertDialog.Builder(this)
++                .setTitle("Salir")
++                .setMessage("¿Estás seguro de que quieres salir de la aplicación?")
++                .setPositiveButton("Sí", new DialogInterface.OnClickListener() {
++                    @Override
++                    public void onClick(DialogInterface dialog, int which) {
++                        // Cierra toda la aplicación
++                        finishAffinity();
++                    }
++                })
++                .setNegativeButton("No", null) // No hace nada, solo cierra el diálogo
++                .show();
++    }
++}
+\ No newline at end of file
+Index: app/src/main/java/com/example/restclientapp/SessionManager.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/restclientapp/SessionManager.java b/app/src/main/java/com/example/restclientapp/SessionManager.java
+new file mode 100644
+--- /dev/null	(date 1764074656968)
++++ b/app/src/main/java/com/example/restclientapp/SessionManager.java	(date 1764074656968)
+@@ -0,0 +1,55 @@
++package com.example.restclientapp;
++
++import android.content.Context;
++import android.content.SharedPreferences;
++
++public class SessionManager {
++
++    private SharedPreferences sharedPreferences;
++    private SharedPreferences.Editor editor;
++    private Context context;
++
++    // Nombre del archivo de preferencias
++    private static final String PREF_NAME = "JuegoSession";
++
++    // Claves para los datos que queremos guardar
++    private static final String KEY_IS_LOGGED_IN = "isLoggedIn";
++    private static final String KEY_EMAIL = "email";
++    private static final String KEY_PASSWORD = "password";
++
++    public SessionManager(Context context) {
++        this.context = context;
++        // MODE_PRIVATE: Solo esta app puede leer estos datos
++        sharedPreferences = context.getSharedPreferences(PREF_NAME, Context.MODE_PRIVATE);
++        editor = sharedPreferences.edit();
++    }
++
++    // Método para guardar la sesión cuando el login es correcto
++    public void guardarSesion(String email, String password) {
++        editor.putBoolean(KEY_IS_LOGGED_IN, true);
++        editor.putString(KEY_EMAIL, email);
++        editor.putString(KEY_PASSWORD, password);
++        editor.apply(); // Guardamos los cambios asíncronamente
++    }
++
++    // Método para comprobar si está logueado
++    public boolean estalogueado() {
++        return sharedPreferences.getBoolean(KEY_IS_LOGGED_IN, false);
++    }
++
++    // Obtener el email del usuario actual (útil para hacer compras)
++    public String getEmail() {
++        return sharedPreferences.getString(KEY_EMAIL, null);
++    }
++
++    // Obtener password (si la necesitas para validar compras en el backend)
++    public String getPassword() {
++        return sharedPreferences.getString(KEY_PASSWORD, null);
++    }
++
++    // Cerrar sesión (Borrar datos)
++    public void cerrarSesion() {
++        editor.clear();
++        editor.commit();
++    }
++}
+\ No newline at end of file
